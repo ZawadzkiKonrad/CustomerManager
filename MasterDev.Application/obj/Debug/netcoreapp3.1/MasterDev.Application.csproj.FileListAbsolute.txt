@@ -1,0 +1,12 @@
+C:\Users\48797\Documents\web\MasterDev\MasterDev.Application\bin\Debug\netcoreapp3.1\MasterDev.Application.deps.json
+C:\Users\48797\Documents\web\MasterDev\MasterDev.Application\bin\Debug\netcoreapp3.1\MasterDev.Application.dll
+C:\Users\48797\Documents\web\MasterDev\MasterDev.Application\bin\Debug\netcoreapp3.1\MasterDev.Application.pdb
+C:\Users\48797\Documents\web\MasterDev\MasterDev.Application\bin\Debug\netcoreapp3.1\MasterDev.Domain.dll
+C:\Users\48797\Documents\web\MasterDev\MasterDev.Application\bin\Debug\netcoreapp3.1\MasterDev.Domain.pdb
+C:\Users\48797\Documents\web\MasterDev\MasterDev.Application\obj\Debug\netcoreapp3.1\MasterDev.Application.csprojAssemblyReference.cache
+C:\Users\48797\Documents\web\MasterDev\MasterDev.Application\obj\Debug\netcoreapp3.1\MasterDev.Application.AssemblyInfoInputs.cache
+C:\Users\48797\Documents\web\MasterDev\MasterDev.Application\obj\Debug\netcoreapp3.1\MasterDev.Application.AssemblyInfo.cs
+C:\Users\48797\Documents\web\MasterDev\MasterDev.Application\obj\Debug\netcoreapp3.1\MasterDev.Application.csproj.CoreCompileInputs.cache
+C:\Users\48797\Documents\web\MasterDev\MasterDev.Application\obj\Debug\netcoreapp3.1\MasterDev.Application.csproj.CopyComplete
+C:\Users\48797\Documents\web\MasterDev\MasterDev.Application\obj\Debug\netcoreapp3.1\MasterDev.Application.dll
+C:\Users\48797\Documents\web\MasterDev\MasterDev.Application\obj\Debug\netcoreapp3.1\MasterDev.Application.pdb

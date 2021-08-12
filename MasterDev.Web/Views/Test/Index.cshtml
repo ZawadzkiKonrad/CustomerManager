@@ -1,0 +1,63 @@
+﻿@model IEnumerable<MasterDev.Application.ViewModels.Klient.KlientForListVm>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Lista klientów</h1>
+
+<p>
+    <a asp-action="AddKlient">Dodaj klienta </a>|<a asp-action="CSV"> Eksportuj klientów do pliku .CSV</a>
+</p>
+<div class="container">
+    <form method="post" asp-controller="Test" asp-action="Import" enctype="multipart/form-data">
+        <input type="file" name="file" />       
+        
+        <button type="submit" class="btn btn-primary">Import z excel</button>
+
+    </form>
+    <br />
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Surname)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BirthYear)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Surname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BirthYear)
+            </td>
+            <td>
+                @Html.ActionLink("Edycja", "EditKlient", new {  id=item.Id  }) |
+                
+                @Html.ActionLink("Usuń", "Delete", new {  id=item.Id })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
