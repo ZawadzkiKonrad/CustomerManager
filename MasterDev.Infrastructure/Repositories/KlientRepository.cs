@@ -1,4 +1,5 @@
-﻿using MasterDev.Domain.Interfaces;
+﻿using MasterDev.Application.ViewModels.Klient;
+using MasterDev.Domain.Interfaces;
 using MasterDev.Domain.Model;
 using System;
 using System.Collections.Generic;
@@ -29,21 +30,66 @@ namespace MasterDev.Infrastructure.Repositories
             var klient = _context.Klients.FirstOrDefault(p => p.Id == id);
 
             _context.Klients.Remove(klient);
-               _context.SaveChanges();
-            
+               _context.SaveChanges();           
             
         }
+        public void DeleteKlients(IEnumerable<int> id)
+        {
+            List<Klient> klients = new List<Klient>();
+            foreach (var item in id)
+            {
+                //if (item.Emps.Selected)
+                //{
+                var selectedKlient = _context.Klients.Find(item);
+                _context.Klients.Remove(selectedKlient);
+                _context.SaveChanges();
+                klients.Add(selectedKlient);
+
+            }
+
+        }
+        //public void DeleteKlients(List<Klient> emp)
+        //{
+        //    foreach (var item in emp)
+        //    {
+        //    var klient = _context.Klients.FirstOrDefault(p => p.Id ==item.Id);
+        //        _context.Klients.Remove(klient);_context.SaveChanges(); 
+        //    }
+                
+                            
+        //}
 
         public IQueryable<Klient> GetAllKlients()
         {
             var klients = _context.Klients;
             return klients;
-        }
+        } 
+        //public List<Klient> GetSelectKlients(List<Klient> emp)
+        //{
+            
+
+        //    List<Klient> employee = new List<Klient>();
+        //    foreach (var item in emp)
+        //    {
+        //        if (item.Emps.Selected)
+        //        {
+        //            var selectedEmployee = _context.Klients.Find(item.Id);
+        //            employee.Add(selectedEmployee);
+        //        }
+        //    }
+        //    return employee;
+           
+        //}
 
         public Klient GetKlientById(int id)
         {
             var klient = _context.Klients.FirstOrDefault(p => p.Id == id);
             return klient;
+        }
+
+        public List<Klient> GetSelectKlients(List<Klient> emp)
+        {
+            throw new NotImplementedException();
         }
 
         public void UpdateKlient(Klient klient)

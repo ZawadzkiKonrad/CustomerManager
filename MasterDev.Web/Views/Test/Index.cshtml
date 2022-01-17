@@ -7,57 +7,124 @@
 <h1>Lista klientów</h1>
 
 <p>
-    <a asp-action="AddKlient">Dodaj klienta </a>|<a asp-action="CSV"> Eksportuj klientów do pliku .CSV</a>
-</p>
-<div class="container">
-    <form method="post" asp-controller="Test" asp-action="Import" enctype="multipart/form-data">
-        <input type="file" name="file" />       
+
+    
+ <a asp-action="AddKlient" asp-controller="Test" class="btn btn-success">Dodaj klienta</a>
+ <a asp-action="CSV" asp-controller="Test" class="btn btn-info">Eksportuj klientów do pliku .CSV</a>
         
-        <button type="submit" class="btn btn-primary">Import z excel</button>
+        
+</p>
 
+
+    <div class="input-group mb-3">
+        <form method="post" asp-controller="Test" asp-action="Import" enctype="multipart/form-data">
+
+            <div class="custom-file">
+                <input type="file" name="file" class="custom-file-input" id="inputGroupFile03">
+                <label class="custom-file-label" for="inputGroupFile03">Wybierz plik</label>
+
+                <button type="submit" class="btn btn-success" style="margin-top: 1em; margin-bottom:2em" asp-action="Import">Import z csv</button>
+                <button type="submit" class="btn btn-success" style="margin-top: 1em; margin-bottom:2em" asp-action="ImportExcel">Import z excel</button>
+            </div>
+
+        </form>
+    </div>
+    <form asp-action="Delete" asp-controller="Test" method="post">
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        Id
+                    </th>
+                    <th>
+                        Imię
+                    </th>
+                    <th>
+                        Nazwisko
+                    </th>
+                    <th>
+                        Rok urodzenia
+                    </th>
+                    <th>
+                        <input type="checkbox" name="allcheck" id="selectAll" /> Zaznacz wszystkich
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Id)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Surname)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.BirthYear)
+                        </td>
+                        <td>
+                            <input type="checkbox" value="@item.Id" name="id" />
+
+                        </td>
+                        <td>
+                            @*@Html.ActionLink("Edycja", "EditKlient", new { id = item.Id }) |*@
+                            @*<a asp-action="Delete" asp-route-id="@item.Id" method="post" onclick="return confirm('Czy na pewno chcesz usunąć klienta: @item.Name @item.Surname ?')">Usuń</a>*@
+
+
+                            @*<form asp-action="Delete" asp-route-id="@item.Id" method="post">*@
+
+                            <a asp-action="EditKlient" asp-controller="Test" asp-route-id="@item.Id" class="btn btn-primary">Edytuj</a>
+                            @*<button type="submit" class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id" f onclick="return confirm('Czy na pewno chcesz usunąć klienta: @item.Name @item.Surname ?')">Usuń</button>
+                        </form>*@
+
+                        </td>
+                    </tr>
+                }
+            </tbody>
+            <thead>
+                <tr>
+                    <th>
+                        
+                    </th>
+                    <th>
+                        
+                    </th>
+                    <th>
+                        
+                    </th>
+                    <th>
+                        
+                    </th>
+                    <th>
+                        <button type="submit" class="btn btn-danger" style="margin-left:-1.5em" asp-action="Delete">Usuń</button>
+                        @*<input type="submit" value="Delete" asp-action="Delete" />*@
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+        </table>
+        <div>
+           
+        </div>
     </form>
-    <br />
-</div>
+@section scripts{
+<script>
+    $(function () {
+        $("#selectAll").click(function () {
+            $("input[type=checkbox]").prop('checked', $(this).prop('checked'));
+        });
+        $("input[type=checkbox]").click(function () {
+            if (!$(this).prop("checked")) {
+                $("selectAll").prop("checked", false);
+            }
+        });
+    })
+</script>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Id)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Surname)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.BirthYear)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Id)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Surname)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.BirthYear)
-            </td>
-            <td>
-                @Html.ActionLink("Edycja", "EditKlient", new {  id=item.Id  }) |
-                
-                @Html.ActionLink("Usuń", "Delete", new {  id=item.Id })
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+ }

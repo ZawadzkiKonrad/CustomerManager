@@ -1,0 +1,9 @@
+C:\Users\48797\Documents\web\MasterDev\MasterDev.Domain\bin\Release\netcoreapp3.1\MasterDev.Domain.deps.json
+C:\Users\48797\Documents\web\MasterDev\MasterDev.Domain\bin\Release\netcoreapp3.1\MasterDev.Domain.dll
+C:\Users\48797\Documents\web\MasterDev\MasterDev.Domain\bin\Release\netcoreapp3.1\MasterDev.Domain.pdb
+C:\Users\48797\Documents\web\MasterDev\MasterDev.Domain\obj\Release\netcoreapp3.1\MasterDev.Domain.csprojAssemblyReference.cache
+C:\Users\48797\Documents\web\MasterDev\MasterDev.Domain\obj\Release\netcoreapp3.1\MasterDev.Domain.AssemblyInfoInputs.cache
+C:\Users\48797\Documents\web\MasterDev\MasterDev.Domain\obj\Release\netcoreapp3.1\MasterDev.Domain.AssemblyInfo.cs
+C:\Users\48797\Documents\web\MasterDev\MasterDev.Domain\obj\Release\netcoreapp3.1\MasterDev.Domain.csproj.CoreCompileInputs.cache
+C:\Users\48797\Documents\web\MasterDev\MasterDev.Domain\obj\Release\netcoreapp3.1\MasterDev.Domain.dll
+C:\Users\48797\Documents\web\MasterDev\MasterDev.Domain\obj\Release\netcoreapp3.1\MasterDev.Domain.pdb

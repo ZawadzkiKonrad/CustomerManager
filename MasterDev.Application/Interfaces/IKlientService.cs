@@ -16,6 +16,11 @@ namespace MasterDev.Application.Interfaces
         NewKlientVm GetKlientForEdit(int id);
         void UpdateKlient(NewKlientVm model);
         void DeleteKlient(int id);
+        void DeleteKlients(IEnumerable<int> id);
         void Import(IFormFile file);
+        void ImportExcel(IFormFile file);
+        
+
+
     }
 }

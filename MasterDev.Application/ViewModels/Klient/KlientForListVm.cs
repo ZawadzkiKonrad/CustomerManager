@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using MasterDev.Application.Mapping;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -12,6 +13,7 @@ namespace MasterDev.Application.ViewModels.Klient
         public string Name { get; set; }
         public string Surname { get; set; }
         public int BirthYear { get; set; }
+        public SelectListItem Emps { get; set; }
         public void Mapping(Profile profile)
         {
             profile.CreateMap<Domain.Model.Klient, KlientForListVm>();

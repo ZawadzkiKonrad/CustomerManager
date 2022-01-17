@@ -9,12 +9,13 @@ namespace MasterDev.Domain.Interfaces
    public interface IKlientRepository
     {
         void DeleteKlient(int id);
+        void DeleteKlients(IEnumerable<int> id);
 
         int AddKlient(Klient klient);
 
         Klient GetKlientById(int id);
 
-        
+        List<Klient> GetSelectKlients(List<Klient> emp);
 
         IQueryable<Klient> GetAllKlients();
 

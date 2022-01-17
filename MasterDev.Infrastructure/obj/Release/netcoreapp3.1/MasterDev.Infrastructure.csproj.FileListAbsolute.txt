@@ -1,0 +1,17 @@
+C:\Users\48797\Documents\web\MasterDev\MasterDev.Infrastructure\bin\Release\netcoreapp3.1\MasterDev.Infrastructure.deps.json
+C:\Users\48797\Documents\web\MasterDev\MasterDev.Infrastructure\bin\Release\netcoreapp3.1\MasterDev.Infrastructure.runtimeconfig.json
+C:\Users\48797\Documents\web\MasterDev\MasterDev.Infrastructure\bin\Release\netcoreapp3.1\MasterDev.Infrastructure.runtimeconfig.dev.json
+C:\Users\48797\Documents\web\MasterDev\MasterDev.Infrastructure\bin\Release\netcoreapp3.1\MasterDev.Infrastructure.dll
+C:\Users\48797\Documents\web\MasterDev\MasterDev.Infrastructure\bin\Release\netcoreapp3.1\MasterDev.Infrastructure.pdb
+C:\Users\48797\Documents\web\MasterDev\MasterDev.Infrastructure\bin\Release\netcoreapp3.1\MasterDev.Domain.dll
+C:\Users\48797\Documents\web\MasterDev\MasterDev.Infrastructure\bin\Release\netcoreapp3.1\MasterDev.Domain.pdb
+C:\Users\48797\Documents\web\MasterDev\MasterDev.Infrastructure\obj\Release\netcoreapp3.1\MasterDev.Infrastructure.csprojAssemblyReference.cache
+C:\Users\48797\Documents\web\MasterDev\MasterDev.Infrastructure\obj\Release\netcoreapp3.1\MasterDev.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\48797\Documents\web\MasterDev\MasterDev.Infrastructure\obj\Release\netcoreapp3.1\MasterDev.Infrastructure.AssemblyInfo.cs
+C:\Users\48797\Documents\web\MasterDev\MasterDev.Infrastructure\obj\Release\netcoreapp3.1\MasterDev.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\48797\Documents\web\MasterDev\MasterDev.Infrastructure\obj\Release\netcoreapp3.1\MasterDev.Infrastructure.csproj.CopyComplete
+C:\Users\48797\Documents\web\MasterDev\MasterDev.Infrastructure\obj\Release\netcoreapp3.1\MasterDev.Infrastructure.dll
+C:\Users\48797\Documents\web\MasterDev\MasterDev.Infrastructure\obj\Release\netcoreapp3.1\MasterDev.Infrastructure.pdb
+C:\Users\48797\Documents\web\MasterDev\MasterDev.Infrastructure\obj\Release\netcoreapp3.1\MasterDev.Infrastructure.genruntimeconfig.cache
+C:\Users\48797\Documents\web\MasterDev\MasterDev.Infrastructure\bin\Release\netcoreapp3.1\MasterDev.Application.dll
+C:\Users\48797\Documents\web\MasterDev\MasterDev.Infrastructure\bin\Release\netcoreapp3.1\MasterDev.Application.pdb
